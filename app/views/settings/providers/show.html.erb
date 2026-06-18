@@ -9,7 +9,12 @@
         ) %>
   <% else %>
     <div class="flex items-center justify-between gap-4">
-      <p class="text-secondary"><%= t("settings.providers.bank_sync.lede") %></p>
+      <p class="text-secondary">
+        <%= t("settings.providers.bank_sync.lede") %>
+        <% if (warning = t("settings.providers.bank_sync.mainland_china_warning", default: nil)) %>
+          <span class="text-red-500 font-medium"><%= warning %></span>
+        <% end %>
+      </p>
       <% if @connected.any? || @needs_attention.any? %>
         <% sync_all_disabled = Current.family.last_sync_all_attempted_at.present? && Current.family.last_sync_all_attempted_at > 30.seconds.ago %>
         <%= render DS::Button.new(

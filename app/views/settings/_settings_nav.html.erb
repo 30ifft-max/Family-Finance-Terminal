@@ -59,15 +59,13 @@ nav_sections = [
       href: previous_path,
       variant: "ghost",
     ) %>
-    <%= link_to previous_path, class: "hidden md:block uppercase bg-surface-inset-hover rounded-sm px-1 py-0.5 text-xs text-secondary shadow-sm ml-1 pointer-events-none", data: { controller: "hotkey", hotkey: "Escape" } do %>
-      <kbd>esc</kbd>
-    <% end %>
+    <%= link_to previous_path, class: "sr-only", data: { controller: "hotkey", hotkey: "Escape" } do %>esc<% end %>
   </div>
   <nav class="space-y-4 hidden md:block">
     <% nav_sections.compact.each do |section| %>
       <section class="space-y-2">
         <div class="flex items-center gap-2 px-3">
-          <h3 class="uppercase text-secondary font-medium text-xs"><%= section[:header] %></h3>
+          <h3 class="shrink-0 text-secondary font-medium text-xs"><%= section[:header] %></h3>
           <%= render "shared/ruler", classes: "w-full" %>
         </div>
         <ul class="space-y-1">

@@ -72,6 +72,24 @@ zh-CN:
         year_built: 建造年份
         edit_account_details: 编辑账户详情
     subtypes:
+      single_family_home:
+        short: 独栋住宅
+        long: 独栋住宅
+      multi_family_home:
+        short: 多户住宅
+        long: 多户住宅
+      condominium:
+        short: 产权公寓
+        long: 产权公寓
+      townhouse:
+        short: 联排别墅
+        long: 联排别墅
+      investment_property:
+        short: 投资房产
+        long: 投资房产
+      second_home:
+        short: 第二居所
+        long: 第二居所
       apartment:
         short: 公寓
         long: 公寓
@@ -81,9 +99,6 @@ zh-CN:
       commercial:
         short: 商业
         long: 商业房产
-      rented:
-        short: 出租
-        long: 出租房产
       agri_land:
         short: 农业用地
         long: 农业用地

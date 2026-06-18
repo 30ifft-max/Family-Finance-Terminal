@@ -77,6 +77,33 @@ zh-CN:
       lira:
         short: LIRA
         long: 锁定退休账户
+      non-registered:
+        short: 非注册
+        long: 非注册投资账户
+      fhsa:
+        short: FHSA
+        long: 首套住房储蓄账户
+      rdsp:
+        short: RDSP
+        long: 注册残疾储蓄计划
+      dpsp:
+        short: DPSP
+        long: 延期利润分享计划
+      prpp:
+        short: PRPP
+        long: 汇集注册养老金计划
+      lif:
+        short: LIF
+        long: 终身收入基金
+      lrif:
+        short: LRIF
+        long: 锁定退休收入基金
+      prif:
+        short: PRIF
+        long: 法定注册退休收入基金
+      rlif:
+        short: RLIF
+        long: 受限终身收入基金
       rrif:
         short: RRIF
         long: 注册退休收入基金
@@ -86,6 +113,9 @@ zh-CN:
       smsf:
         short: SMSF
         long: 自主管理超级年金基金
+      assurance_vie:
+        short: AV
+        long: 人寿保险储蓄（Assurance Vie）
       pea:
         short: PEA
         long: 股票储蓄计划

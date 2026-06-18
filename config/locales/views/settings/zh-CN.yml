@@ -275,6 +275,7 @@ zh-CN:
       bank_sync:
         page_title: 银行同步
         lede: 连接外部账户，让交易、余额和持仓自动流入 Sure。
+        mainland_china_warning: "【中国大陆不可用】"
       status:
         ok: 已连接
         warn: 需要处理
