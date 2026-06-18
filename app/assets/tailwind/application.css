@@ -238,8 +238,8 @@
   background-image: linear-gradient(
     to right,
     transparent 1rem,
-    var(--color-alpha-white-200) 1rem,
-    var(--color-alpha-white-200) calc(100% - 1rem),
+    #333333 1rem,
+    #333333 calc(100% - 1rem),
     transparent calc(100% - 1rem)
   );
 }

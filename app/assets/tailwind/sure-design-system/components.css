@@ -210,7 +210,7 @@
   .segmented-control {
     @apply inline-flex items-center gap-0.5 p-1 rounded-lg bg-gray-50;
     @variant theme-dark {
-      @apply bg-alpha-black-700;
+      background-color: #171717;
     }
   }
 
@@ -219,14 +219,16 @@
     @apply text-sm font-medium text-secondary cursor-pointer transition-colors duration-200;
     @apply hover:bg-gray-200;
     @variant theme-dark {
-      @apply hover:bg-gray-800;
+      &:hover { background-color: #222222; }
     }
   }
 
   .segmented-control__segment--active {
     @apply bg-white text-primary shadow-sm hover:bg-white;
     @variant theme-dark {
-      @apply bg-gray-700 hover:bg-gray-700;
+      background-color: #2C2C2C;
+      box-shadow: none;
+      &:hover { background-color: #2C2C2C; }
     }
   }
 
@@ -276,9 +278,7 @@
       0 8px 24px rgba(11, 11, 11, 0.12);
 
     @variant theme-dark {
-      box-shadow:
-        0 0 0 1px var(--color-alpha-white-50),
-        0 8px 24px rgba(11, 11, 11, 0.12);
+      box-shadow: 0 0 0 1px #333333;
     }
   }
 }

@@ -1,16 +1,16 @@
 class DS::Buttonish < DesignSystemComponent
   VARIANTS = {
     primary: {
-      container_classes: "text-inverse bg-inverse hover:bg-inverse-hover disabled:bg-gray-500 theme-dark:disabled:bg-gray-400",
-      icon_classes: "text-inverse"
+      container_classes: "text-white button-bg-primary hover:button-bg-primary-hover disabled:opacity-50",
+      icon_classes: "text-white"
     },
     secondary: {
-      container_classes: "text-primary bg-gray-200 theme-dark:bg-gray-700 hover:bg-gray-300 theme-dark:hover:bg-gray-600 disabled:bg-gray-200 theme-dark:disabled:bg-gray-600",
+      container_classes: "text-primary button-bg-secondary hover:button-bg-secondary-hover disabled:opacity-50",
       icon_classes: "text-primary"
     },
     destructive: {
-      container_classes: "text-inverse button-bg-destructive hover:button-bg-destructive-hover disabled:bg-red-200 theme-dark:disabled:bg-red-600",
-      icon_classes: "text-inverse"
+      container_classes: "text-white button-bg-destructive hover:button-bg-destructive-hover disabled:opacity-50",
+      icon_classes: "text-white"
     },
     outline: {
       container_classes: "text-primary border border-secondary bg-transparent hover:bg-surface-hover",

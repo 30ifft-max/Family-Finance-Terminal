@@ -49,11 +49,12 @@
 
   input[type='radio'] {
     @apply border-gray-300 text-indigo-600 focus:ring-indigo-600;
-    /* Default light mode */
 
     @variant theme-dark {
-      /* Dark mode radio button base and checked styles */
-      @apply border-gray-600 bg-gray-700 checked:bg-blue-500 focus:ring-blue-500 focus:ring-offset-gray-800;
+      border-color: #333333;
+      background-color: #2C2C2C;
+      &:checked { background-color: #10A861; }
+      &:focus { --tw-ring-color: #10A861; --tw-ring-offset-color: #171717; }
     }
   }
 }
