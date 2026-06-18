@@ -3,7 +3,7 @@
 
 <div class="group flex lg:grid lg:grid-cols-12 items-center text-sm font-medium px-3 py-2 lg:px-4 lg:py-2.5 border-b border-secondary opacity-50 text-secondary">
   <%# === Name column === %>
-  <div class="pr-4 lg:pr-4 flex items-center gap-3 lg:gap-3 col-span-4 min-w-0">
+  <div class="pr-4 lg:pr-2 flex items-center gap-3 lg:gap-3 lg:col-span-3 grow lg:grow-0 min-w-0">
     <div class="max-w-full min-w-0">
       <div class="flex items-center gap-1 min-w-0">
         <div class="truncate flex-shrink">
@@ -24,6 +24,9 @@
       </div>
     </div>
   </div>
+
+  <%# === Indicators column === %>
+  <div class="hidden lg:flex items-center justify-center col-span-1"></div>
 
   <%# === Merchant column === %>
   <div class="hidden lg:flex min-w-0 items-center col-span-2">
