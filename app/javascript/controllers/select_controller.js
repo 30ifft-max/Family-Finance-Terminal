@@ -43,7 +43,7 @@ export default class extends Controller {
       this.menuTarget.classList.remove("opacity-0", "-translate-y-1", "pointer-events-none")
       this.menuTarget.classList.add("opacity-100", "translate-y-0")
       this.updatePosition()
-      this.scrollToSelected()
+      if (!this.focusSearch()) this.scrollToSelected()
     })
   }
 

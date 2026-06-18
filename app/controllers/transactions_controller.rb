@@ -15,7 +15,7 @@ class TransactionsController < ApplicationController
   def index
     @q = search_params
     accessible_account_ids = Current.user.accessible_accounts.pluck(:id)
-    @search = Transaction::Search.new(Current.family, filters: @q, accessible_account_ids: accessible_account_ids)
+    @search = Transaction::Search.new(Current.family, filters: @q.except("date_preset_label"), accessible_account_ids: accessible_account_ids)
 
     base_scope = @search.transactions_scope
                        .reverse_chronological
@@ -526,7 +526,7 @@ class TransactionsController < ApplicationController
       cleaned_params = params.fetch(:q, {})
               .permit(
                 :start_date, :end_date, :search, :amount,
-                :amount_operator, :active_accounts_only,
+                :amount_operator, :active_accounts_only, :date_preset_label,
                 accounts: [], account_ids: [],
                 categories: [], merchants: [], types: [], tags: [], status: []
               )

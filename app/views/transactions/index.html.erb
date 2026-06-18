@@ -32,7 +32,8 @@
             variant: "primary",
             href: new_transaction_path,
             frame: :modal,
-            class: "hidden md:inline-flex"
+            size: :md,
+            class: "hidden md:inline-flex gap-2"
           ) %>
 
         <%= render DS::Link.new(
@@ -57,15 +58,11 @@
       <% end %>
 
       <% tabs.with_panel(tab_id: "transactions") do %>
-        <div class="bg-container rounded-xl shadow-border-xs">
-          <%= render "transactions/list", transactions: @transactions, projected_recurring: @projected_recurring, q: params[:q], pagy: @pagy %>
-        </div>
+        <%= render "transactions/list", transactions: @transactions, projected_recurring: @projected_recurring, q: params[:q], pagy: @pagy %>
       <% end %>
 
       <% tabs.with_panel(tab_id: "upcoming") do %>
-        <div class="bg-container rounded-xl shadow-border-xs">
-          <%= render "transactions/upcoming" %>
-        </div>
+        <%= render "transactions/upcoming" %>
       <% end %>
     <% end %>
   <% end %>

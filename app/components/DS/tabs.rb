@@ -13,7 +13,7 @@ class DS::Tabs < DesignSystemComponent
   renders_many :panels, ->(tab_id:, &block) do
     content_tag(
       :div,
-      class: ("hidden" unless tab_id == active_tab),
+      class: class_names("outline-none", ("hidden" unless tab_id == active_tab)),
       role: "tabpanel",
       id: panel_dom_id(tab_id),
       "aria-labelledby": tab_dom_id(tab_id),
